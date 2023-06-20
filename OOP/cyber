@@ -1,0 +1,56 @@
+Cryptography : sience aims to secure protocols
+Primatives : Unit to Form Cryptography Protocol [SymEnc - AsymEnc - DS - KEX ] 
+Cryptography Algorethim : Application On the Primative by using it in small and Specefic Functionality
+Cryptography Protocol : Group of Primatives formed a Full Protocol
+
+
+
+
+First Classification : (Sym vs Asym)
+Second Classification : (Math Based [Arethmatic Ops or Logic Ops or Functions] vs Heuristic Based )
+Third Classification : (Theoretical [Still Ideas not performed] Vs Applied [Created and standaralized Algorethims])
+
+
+
+1.	Block Cipher Converts the plain text into cipher text by taking plain text’s block at a time.	Stream Cipher Converts the plain text into cipher text by taking 1 byte of plain text at a time.
+2.	Block cipher uses either 64 bits or more than 64 bits.	While stream cipher uses 8 bits.
+3.	The complexity of block cipher is simple.	        While stream cipher is more complex.
+4.	Block cipher Uses confusion as well as diffusion.	While stream cipher uses only confusion.
+5.	In block cipher, reverse encrypted text is hard.	While in-stream cipher, reverse encrypted text is easy.
+
+read.socket()
+read.csv()
+readChar()
+readBin()
+readLines()
+
+write.socket()
+write.csv()
+writeChar()
+writeBin()
+writeLines()
+
+file.size()
+file.append()
+file.path()
+file.copy()
+file.rename()
+file.create()
+file.link()
+file.symlink()
+file.show()
+file.exists()
+file.info()
+
+
+
+getCallingDLL()
+getCallingDLLe()
+getDLLRegisteredRoutines.DLLInfo()
+getDLLRegisteredRoutines()
+getLoadedDLLs()
+
+
+window()
+system2()
+system()

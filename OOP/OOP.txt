@@ -1,0 +1,813 @@
+Class is New datatype creation 
+Object or instance  is Variable with same DataType of Class (Class copy n of times)
+                    has Variables or Properties or attributes or dataitems or fields
+                    Functions or actions oroperations or methods
+
+
+
+
+
+
+Class intialization 
+
+
+Normal way
+
+
+
+header file
+
+header file for Variable (attributes)DataTypes & Function Prtotype == same as impelementation but without Function body 
+Impelementation File (the Class Code)
+Client Code (Code which main function use this class to create object from it) By #include car.h
+
+
+Namespace
+namespace ns
+{
+    // A Class in a namespace
+    class geek
+    {
+    public:
+        void display()
+        {
+            cout<<"ns::geek::display()"<<endl;;
+        }
+    };
+}
+ 
+int main()
+{
+    // Creating Object of geek Class
+    ns::geek obj;
+ 
+    obj.display();
+ 
+    return 0;
+}
+
+
+
+
+But what does 'using' do!
+how to include external namespace
+Use Classes without Objecting
+
+
+
+Class members: propertis + methods
+
+
+class class1{
+
+public:
+
+
+
+private:
+
+
+
+
+
+};
+
+
+Convention
+Private AM to Properties : Object member cant be accessed ever in coding those members accessed only in class coding
+
+Public  AM to Methods specially which control properties  (Setters & getters) : Object member can be accessed in coding
+
+
+
+instance intialization
+class1 /*Like datatype*/ objName;
+
+
+
+
+
+
+Constructor is a function [used from Impelementation File]  //Welcomer
+with the same name of class 
+Doesnt return any datatype 
+automatically called and executed when Object is Created
+Class1(){
+Code;
+}
+
+
+
+
+Constructor used to intialize values for Attribs
+Normal 
+
+Class1(){
+prop1 = 40;
+prop2 = 50;
+}
+
+
+intialization List
+
+Class1():prop1(40) , prop2(50)
+
+{
+prop1 = 40;
+prop2 = 50;
+}
+
+
+
+Constructor parameters
+written in Header File , Impelementation File 
+
+
+If you want Constructor to work dynmically to Intialize Variables from Methods Class members or  attributes Class members
+
+
+coding that
+
+Class1(int param1,string param2)
+
+{
+prop1 = param1;
+prop2 = param2;
+}
+
+
+
+using that
+
+calss1 objName(param1,param2);   
+
+
+
+
+
+
+
+
+Destructor is a function [used from Impelementation File]  //Goodbyer
+with the same name of class 
+Doesnt return any datatype 
+automatically called and executed when Object is destroyed or its scope ended objcet scope can be (any function - Block of Code - all main function) 
+~Class1(){
+Code;
+}
+
+
+used to deallocate  memory
+
+
+
+
+Method Over loading : use same name for more one method
+Conditiond
+Diffrent Signature ( param numbers or param datatypes or Function Datatype)
+You can make same technique with 
+
+
+
+
+
+
+
+
+
+
+// C++ program to demonstrate constructors
+
+#include <bits/stdc++.h>
+using namespace std;
+class Geeks
+{
+	public:
+	int id;
+	
+	//Default Constructor
+	Geeks()
+	{
+		cout << "Default Constructor called" << endl;
+		id=-1;
+	}
+	
+   int fu(){
+   cout <<"xx\n";
+     return 0;
+   }
+  
+	//Parameterized Constructor
+	Geeks(int x)
+	{
+		cout << "Parameterized Constructor called" << endl;
+		id=x;
+	}
+};
+int main() {
+	
+	// obj1 will call Default Constructor
+	Geeks obj1;
+	cout << "Geek id is: " <<obj1.id << endl;
+	
+	// obj2 will call Parameterized Constructor
+	Geeks obj2(21);
+  obj2.fu();
+  Geeks obj3 = obj2;
+	cout << "Geek id is: " <<obj3.id << endl;
+
+	cout << "Geek id is: " <<obj2.id << endl;
+	return 0;
+}
+
+
+You can pass Objects or Object properties to Functions
+
+
+Static Variable: Varibale In Function That Put in static area and never Deleted from memory after function ended 
+                 but it is still in has fixed scope related to place in which it decleared
+                 if you put it ti function to access it and monitor it you should use this function 
+
+
+Static Class Members : Allocated With First Constructor (in Static mem section)and keep its Values and Keep edits and never Deallocated With any Distruction and never return back to intial value till Program finish
+                       Never Get intial Value on the class 
+                       in Global Scope By scope resulotion Operator       
+                       dataType class1::stat = 20;
+                       Can Be Accessed without Making Objects
+                       static Value of variable  Shared Between all Objects because it is never Deconstructed
+                       static functions can be accessed without Objs        
+                       Class1::method1();
+
+
+
+
+
+
+
+
+Constant in OOP :
+class sample {
+   int val;
+   int editable;
+   public:
+   static const int constvar = 10;
+
+   sample(int x) {
+      val = x;
+   }
+
+
+
+   int CgetValue()  const {
+      return val;
+   }
+
+   int NgetValue()   {
+      return val;
+   }
+   int Nedit()  {
+    editable = 100;
+    //constvar = 10;//Error
+    //Const Variable cant be Edited
+
+    cout << "Testing Edit Ability editable = " ;
+    return editable;
+    }
+    int Cedit() const {
+    // editable = 100; //Error
+    //Const Function Cant Edit Class members
+
+    cout << "Testing Edit Ability editable = " ;
+    return editable;
+    }
+
+};
+
+
+
+
+
+
+int main(){
+
+
+
+
+ const sample s(20);
+sample s1(20);
+
+
+
+//s.constvar = 20;//Error
+//Const Variable cant be Edited
+
+
+
+
+//cout << s.Nedit() << endl;
+//Const Object Cant Call Not Const Function 
+
+cout << s1.Nedit() << endl;
+//Normal Object execute a Normal Function that Edit Value  of Class member
+cout << "The value using Const object to Call Const Function: " << s.CgetValue();
+//Const Object cant Call Normal Functions can pnly Call Const Function
+//   cout << "The value using Const object  : " << s.NgetValue(); // Error
+cout << "\nThe value using Normal object  to Call Const Function: " << s1.CgetValue();
+cout << "\nThe value using Const object  to Call Const Function: " << s.CgetValue();
+//const Function Can Be accessed with Normal Object And Const Object
+
+
+
+   
+return 0;
+
+
+
+   //Constant Function : Read Only Function Cant edit Class  member Can Be accessed with Normal Object And Const Object
+   //Constant Object : Object that Can only access Const Methods (Which cant edit Class members) So Const Object  cant Edit Class Members  
+   //Syntax of const function : int func()  const {}
+   //Syntax of const Object  :    const className obj(20);   
+   //Const Object cant Call Normal Functions can only Call Const Function
+
+}
+
+
+
+friend function: function has the right to access all class members private or protected
+                 it is prototyped od defined int the class with key word friend but 
+                 Implemented Outside the class
+                 
+                 
+                 //ClassCode
+                 friend void func(ClassName anyObjName);
+                 //ClassCode
+                 };
+                 
+                 
+                 //Coding Function
+                 void func(ObjName){
+                 //Code
+                 
+                 }
+                 
+                 
+                 //Calling Function
+                 func(x);
+
+
+
+// forward declaration
+class ClassB;
+
+class ClassA {
+    private:
+        int numA;
+
+        // friend class declaration
+        friend class ClassB;
+
+    public:
+        // constructor to initialize numA to 12
+        ClassA() : numA(12) {}
+};
+
+class ClassB {
+//Code
+}
+
+
+Many Object Decleration
+------------------------
+Classex obj1,obj2,obj3
+
+
+Array Of Objects
+----------------
+1- Non Parametrized Constructor
+Classex objarr[3]
+objarr[1].func();
+2- Parametrized Constructor
+Classex objarr[3] = {Classex("Mo",82),Classex("AS",21),Classex("TE",54)};
+
+3- Store Made Objects in Array
+Classex obj1,obj2
+Classex carr[2] = {obj1,obj2};
+
+Pointer To object 
+------------------
+Step 1- Address : cout<< &obj1;
+
+Step 2- intial Pointer with Same datatype : BoxClass *ptrBox ;
+
+Step 3- Store Address of Obbject in Pointer :ptrBox = &Box1Obj;
+
+
+
+
+Pointer To Array
+----------------
+Array is Constant Pointer *(arr++) cant be made because arr cant be changed
+
+int arr[2] = {10,2};
+int *arrptr;
+arrptr = arr;
+*arrptr =10 
+*(arrptr+1) = 2
+arrptr++ //Accepted
+
+
+This in OOP:
+------------
+this : Pointer To Object instancieated
+usage : 1) To Edit Class Members and Access it Directly if You want to Name any Function Parameter with the same name this.var 
+        2)==========
+        
+=======================================================
+Pass & Return Object to Function                      |
+pointer to function				      |
+pointer to structure				      |
+array of structures				      |
+Object & Array as Function Parameter		      |
+Array of Pointers				      |
+=======================================================
+
+
+Function Parameter Pointer
+----------------------
+
+
+
+
+
+Function Parameter Array
+----------------------
+
+
+Function Return Array 
+----------------------
+int * MakeArray( ) {
+   static int  r[10]={1,3,2,5,4,5,2};
+   return r;
+}
+  int *randomArr ;
+  randomArr = MakeRandomArray();
+  cout << randomArr[4];
+  
+  
+  
+  
+Function Return pointer
+----------------------
+int * PFunction(int x ) {
+   
+  int *ptr = &x;
+  return ptr;
+}
+int var = 40;
+cout<< PFunction(var)<< endl;
+
+
+Pinter To Function
+----------------------
+void printaddfunc(int a , int b){cout << a + b << endl;}
+int realaddfunc(int a , int b){return a+b;}
+
+//Pointer to Functions usages :(Call Function with its Pointer|Pointer To Returned Value Of Function)
+//Intialization:
+
+void (*funptr)(int,int);
+int (*realfunptr)(int,int);
+funptr = &printaddfunc;
+realfunptr = &realaddfunc;
+//Usage:
+
+//Call Function With its Pointer
+funptr(1,2);
+cout << realfunptr(1,2)  << endl;
+//Store Returned Value Or Print it  or its address in the mem
+int sum12 = realfunptr(1,2); 
+cout << sum12<< endl;
+cout << &sum12<< endl;
+
+
+
+
+Operator Over Loading  : Define an action with operators on obj By Use Operator as method
+---------------------
+
+A)Unary
+-------
+
+//Note that in unary operators Prefix is diffrent to suffix obj++ defination not means ++obj defination
+
+#include <bits/stdc++.h>
+using namespace std;
+class Geeks
+
+
+
+
+
+{
+	public:
+	int id;
+	
+	//Default Constructor
+	Geeks(int idintial)
+
+	{
+	cout << "Default Constructor called" << endl;
+	int id = idintial;
+	}
+	//Operator Overloading for ++Geeks
+        Geeks()	operator ++(){
+        //make any thing on any variable
+        ++id;
+        return Geeks(id);}
+        //Operator Overloading for Geeks++
+        Geeks()	operator ++(int){
+        //make any thing on any variable
+        id++;
+        return Geeks(id);
+        //Same as method But Return data type as object From that  Class datatype 
+        }
+};
+
+
+Usage
+
+Geeks obj1(1021);
+Geeks obj2 = obj1++;
+
+
+
+
+A)Binary
+-------
+//Note that in Binary operators which define as methods Defined in and Called By First Object and This Method Get Second Object as Input 
+
+class Geeks
+{
+	public:
+	int id;
+	
+	
+	
+	
+	//Default Constructor
+	Geeks(int idintial)
+
+	{
+	cout << "Default Constructor called" << endl;
+	int id = idintial;
+	}
+	//Operator Overloading for Geeksobj1 + Geeksobj2 Now it will be same as method
+        Geeks()	+(Geeks obj1){
+        //Same as method But Parameterized and Its Paramater data Type is Object From that  Class datatype has any dummy name like func(int a) and func(42)
+        idall = id+obj1.id;
+        return Geeks(idall);
+        //Same as method But return data type is object From that  Class datatype according to this method defination
+        }
+        
+};
+
+Usage:
+Geeks obj1(1021);
+Geeks obj2(2012);
+Geeks obj3 = obj1+obj2;
+
+
+
+
+
+
+
+
+
+Inheritence  [Most Important topic in OOP]
+-----------
+make Class as Edited Copy From another old class
+Drived Class and Base Class 
+Child Class and Parent Class
+Sub   Class and Super Class
+inherit all Capibabilities andFeatures in addition to that could add its new Features
+
+
+LetSay: bmw is Subclass of Car  if bmw has 1 new Properties and  Car has 2 Properties   By default   all Properrties of bm is 1new + 2 inherited = 3 
+Modes of inheritence:
+                    A- Public Mode : all stay as normal: Public Members in Parent Class stay Public member in Child Class
+                    B- Protected Mode: Public Members in Parent Class and Protected Members and Private Members all  turned to Protected member in Child Class
+                    C  Private Mode:  Public Members in Parent Class and Protected Members and Private Members  all  turned to Private member in Child Class
+                    
+
+
+
+using: 
+class childclassex : public Parentclassex{
+public: 
+     int id;
+     float x;
+
+}
+
+
+New class inherits every thing even constructor method implementation if it wasnt implementes for new child
+
+
+
+Constructors & inheritence:
+if you created object of sub class two constructors By default will be called Sub Class Constructor & Super Class Constructor
+if you used Parameterized One It will  reffer to Sub Class Constructor Parameterized constructor
+If you want to use Super Class  Parameterized Constructor
+
+
+
+
+// Super Class 
+class Vehicle {
+  public: 
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+    Vehicle(string x, string y, int z){
+      brand = x;
+      model = y;
+      year = z;}
+};
+
+
+// sub class
+class Car: public Vehicle {
+  public: 
+    int wheel ;
+    Car(int w){
+    wheel = w 
+    }
+};
+
+
+
+
+Use Vehicle Constructor
+
+
+
+class Vehicle {
+  public: 
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+    Vehicle(string x, string y, int z){
+      brand = x;
+      model = y;
+      year = z;}
+};
+
+
+// sub class
+class Car: public Vehicle {
+  public: 
+    int wheel ;
+    Car(string x, string y, int z,int w):Vehicle(x,y,z){    //use First 3 Parameters in Base Constructor
+    wheel = w 
+    
+    Vehicle::honk();
+    //Use Function From Base Class 
+    }
+};
+
+
+
+
+
+
+
+Function Overwriding:  (Redefine baseclass function)
+Make A function in the SubClass has a same Signature of an exist Function in Super Class
+
+Make Your Function In Subclass And Function in another Super class will Be Ignored automatically
+
+
+
+
+Multiple inheritence[Didnt allowed in java]:
+
+A subclass has 2 Super class (inherits from more than 1 class)
+
+
+
+
+
+
+
+
+
+// Base class
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Another base class
+class MyOtherClass {
+  public:
+    void myOtherFunction() {
+      cout << "Some content in another class." ;
+    }
+};
+
+// Derived class
+class MyChildClass: public MyClass, public MyOtherClass {
+};
+
+
+If you want to use 2 Super Class  Parameterized Constructors
+
+    MyChildClass(string a, string b, int c,int w):MyOtherClass(a,b),MyClass(c){    //use First 3 Parameters in 2 Base Constructor
+
+    }
+
+
+If you want to use any Function that was duplicated with the same signature in 2 Base Classes and Drivedclass
+
+//Use it By Scope resulotion Operator 
+obj1.MyClass::func()
+obj1.MyOtherClass::func()
+obj1.MyChildClass::func()
+
+
+what is Polimerphism   
+--------------------
+if have same Function in Same signature in Subclass and Super Classes or In multiple inheritence  you can describe that as a  Polimerphism to this function because it has more than 1 shape 
+
+Compiletime: Method overload (Diffrent Signature for Function Between Sub class and Super class)
+Runtime: Method Override 
+
+
+Same for Function Between Sub class and Super class
+But the Function in Super Class must Be virtual by keyword virtual 
+to be as A sign that any function in the subclasses 
+with same signature will override it or
+
+
+
+
+
+// Base class
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+   virtual void functiontest(int a){
+    printf("polytest %d \n")
+    }
+    
+};
+
+
+// Derived class
+class MyChildClass: public MyClass {
+
+
+   virtual void functiontest(int a){
+    printf("polytest %d \n")
+    }
+
+};
+
+
+
+
+
+ Use Heap objects and function will be overrided automatically 
+
+
+
+
+
+ Abstract Class or interface : Model or design  Class that created class must follow it by inheritance 
+                               cant be used to intansiation for an object just is a design to inhrit
+                               this idea mainly Based on Functions
+                               there are 2 types of function contribute to perform this technique 
+                               Pure Virtual Function : as soon as this Function exist the class turned to 
+                                                       Abstract Class and any class inherit it must Override this function
+                                                       virtual datatype func() = value
+                                                    ex virtual int func() = 10;
+                                                       virtual char func() = 'a';
+                                                       
+                                                       
+                              Final Abstraction function:Function in Abstract class cant be Overrided in inheritance
+                                                         virtual void func() final
+                                                         {
+                                                         //Code
+                                                         }
+                                                         
+                                                          
+------------------------------------------------------------------------------------------------------------------------
+https://www.youtube.com/watch?v=GeZiIDyJdYc&list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&index=8     7/8/14/
+------------------------------------------------------------------------------------------------------------------------
