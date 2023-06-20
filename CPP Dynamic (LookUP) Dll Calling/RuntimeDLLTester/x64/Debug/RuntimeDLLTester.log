@@ -1,0 +1,3 @@
+﻿  RuntimeDLLTester.cpp
+C:\Users\Blu-Ray\source\C++\RuntimeDLLTester\RuntimeDLLTester\RuntimeDLLTester.cpp(7,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  RuntimeDLLTester.vcxproj -> C:\Users\Blu-Ray\source\C++\RuntimeDLLTester\x64\Debug\RuntimeDLLTester.exe
