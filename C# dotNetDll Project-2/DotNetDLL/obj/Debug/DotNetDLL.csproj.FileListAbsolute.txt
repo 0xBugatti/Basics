@@ -1,0 +1,6 @@
+C:\Users\Blu-Ray\source\testing\DotNetDLL\DotNetDLL\bin\Debug\DotNetDLL.dll
+C:\Users\Blu-Ray\source\testing\DotNetDLL\DotNetDLL\bin\Debug\DotNetDLL.pdb
+C:\Users\Blu-Ray\source\testing\DotNetDLL\DotNetDLL\obj\Debug\DotNetDLL.csproj.AssemblyReference.cache
+C:\Users\Blu-Ray\source\testing\DotNetDLL\DotNetDLL\obj\Debug\DotNetDLL.csproj.CoreCompileInputs.cache
+C:\Users\Blu-Ray\source\testing\DotNetDLL\DotNetDLL\obj\Debug\DotNetDLL.dll
+C:\Users\Blu-Ray\source\testing\DotNetDLL\DotNetDLL\obj\Debug\DotNetDLL.pdb

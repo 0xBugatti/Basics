@@ -1,0 +1,6 @@
+C:\Users\Blu-Ray\source\dlls\dotNetDll\dotNetDll\bin\Debug\dotNetDll.dll
+C:\Users\Blu-Ray\source\dlls\dotNetDll\dotNetDll\bin\Debug\dotNetDll.pdb
+C:\Users\Blu-Ray\source\dlls\dotNetDll\dotNetDll\obj\Debug\dotNetDll.csproj.AssemblyReference.cache
+C:\Users\Blu-Ray\source\dlls\dotNetDll\dotNetDll\obj\Debug\dotNetDll.csproj.CoreCompileInputs.cache
+C:\Users\Blu-Ray\source\dlls\dotNetDll\dotNetDll\obj\Debug\dotNetDll.dll
+C:\Users\Blu-Ray\source\dlls\dotNetDll\dotNetDll\obj\Debug\dotNetDll.pdb

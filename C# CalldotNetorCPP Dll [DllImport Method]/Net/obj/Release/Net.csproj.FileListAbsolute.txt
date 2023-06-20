@@ -1,0 +1,10 @@
+C:\Users\Blu-Ray\source\C++\Net\Net\bin\Release\Net.exe.config
+C:\Users\Blu-Ray\source\C++\Net\Net\bin\Release\Net.exe
+C:\Users\Blu-Ray\source\C++\Net\Net\bin\Release\Net.pdb
+C:\Users\Blu-Ray\source\C++\Net\Net\obj\Release\Net.csproj.AssemblyReference.cache
+C:\Users\Blu-Ray\source\C++\Net\Net\obj\Release\Net.csproj.SuggestedBindingRedirects.cache
+C:\Users\Blu-Ray\source\C++\Net\Net\obj\Release\Net.csproj.CoreCompileInputs.cache
+C:\Users\Blu-Ray\source\C++\Net\Net\obj\Release\Net.exe
+C:\Users\Blu-Ray\source\C++\Net\Net\obj\Release\Net.pdb
+C:\Users\Blu-Ray\source\C++\Net\Net\obj\Release\Net.Properties.Resources.resources
+C:\Users\Blu-Ray\source\C++\Net\Net\obj\Release\Net.csproj.GenerateResource.cache
