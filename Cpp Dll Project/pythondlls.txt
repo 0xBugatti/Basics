@@ -1,0 +1,38 @@
+Dll Calling And C Developmenrt Python
+
+from ctypes import *
+
+windll.user32.MessageBoxA(0, "Your text\n\n\nds", "Your title\n\n\n", 1)
+
+mydll = cdll.LoadLibrary("C:\\Users\\Blu-Ray\\PycharmProjects\\pythonProject\\momo.dll")
+mydll.Messageme();
+mydll.Hackme(10);
+
+or
+
+mywindll = windll.LoadLibrary("C:\\Users\\Blu-Ray\\PycharmProjects\\pythonProject\\momo.dll")
+mywindll.Hackme(10);
+or
+
+cdll.LoadLibrary("C:\\Users\\Blu-Ray\\PycharmProjects\\pythonProject\\momo.dll").Messageme()
+mywindll = windll.LoadLibrary("C:\\Users\\Blu-Ray\\PycharmProjects\\pythonProject\\momo.dll").Messageme()
+
+
+
+
+Usages:
+Loading DLLs ->Loading dynamic link libraries
+Access Functions From Dlls ->Accessing functions from loaded dll
+Acccess C Functions -> Calling functions, continued
+Make C datatypes -> Fundamental data types
+Make Structures And Arrays And Pointer
+https://docs.python.org/3/library/ctypes.html#structures-and-unions
+https://docs.python.org/3/library/ctypes.html#pointers
+https://docs.python.org/3/library/ctypes.html#arrays
+https://docs.python.org/3/library/ctypes.html#arrays-and-pointers
+
+
+
+
+Nmaespaces Templetes  Enumeration 
+33 ->37

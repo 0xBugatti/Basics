@@ -1,0 +1,16 @@
+﻿  DLLex.cpp
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.cpp(5,17): warning C4309: 'initializing': truncation of constant value
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.cpp(7,5): warning C4273: 'add': inconsistent dll linkage
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.h(20,28): message : see previous definition of 'add'
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.cpp(11,6): warning C4273: 'printId': inconsistent dll linkage
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.h(21,29): message : see previous definition of 'printId'
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.cpp(16,11): warning C4273: 'Function::Function': inconsistent dll linkage
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.h(25,2): message : see previous definition of '{ctor}'
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.cpp(20,16): warning C4273: 'Function::print': inconsistent dll linkage
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.h(28,7): message : see previous definition of 'print'
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.cpp(24,20): warning C4273: 'Function::generate': inconsistent dll linkage
+C:\Users\Blu-Ray\source\dlls\dllex1\Dll-ex1\DLLex.h(29,18): message : see previous definition of 'generate'
+  dllmain.cpp
+  Generating Code...
+     Creating library C:\Users\Blu-Ray\source\dlls\dllex1\x64\Debug\Dllex.lib and object C:\Users\Blu-Ray\source\dlls\dllex1\x64\Debug\Dllex.exp
+  Dll-ex1.vcxproj -> C:\Users\Blu-Ray\source\dlls\dllex1\x64\Debug\Dllex.dll

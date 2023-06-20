@@ -1,0 +1,81 @@
+C++
+Dll Coding -> Finished with Visual Studion 
+Dll Coding g++
+write cpp and h files without 
+g++ -c -DBUILD_MY_DLL {shared_lib}.cpp
+g++ -shared -o {shared_lib}.dll {sahredlib}.o -Wl,--out-implib,lib{shared_lib}.a
+
+
+ loadlibrary -> 
+https://www.youtube.com/watch?v=_kIa4D7kQ8I
+https://www.youtube.com/watch?v=bPw9snatnVY
+
+Dynamic Calling [Previous Techniques] sVs Normal Calling 
+#include <Windows.h> 
+void main(){
+MessageBox(0, (LPCWSTR)L"myfirstdll loaded", (LPCWSTR)L"SUCCESS STATUS", MB_OK);
+}
+
+
+
+
+dllmain
+
+
+main() means your program is a console application.
+
+WinMain() means the program is a GUI application -- that is, it displays windows and dialog boxes instead of showing console.
+
+DllMain() means the program is a DLL. A DLL cannot be run directly but is used by the above two kinds of applications.
+
+Therefore:
+
+Use WinMain when you are writing a program that is going to display windows etc.
+Use DLLMain when you write a DLL.
+Use main in all other cases.
+
+
+
+
+
+C#
+DllCalling Dynamic and Dll Coding
+
+To Call Function From DLL Prototype it With this way
+
+[DllImport("filepath.dll")]
+static extern void func..prototype...
+
+
+The use it in main Function
+
+
+
+
+https://www.youtube.com/watch?v=3efOjwKb9p4&t=873s
+https://www.youtube.com/watch?v=o-ass4mkdiA
+https://www.youtube.com/watch?v=ilRJRkMyzlA
+https://www.youtube.com/watch?v=fCfneKhiYBw
+https://www.youtube.com/watch?v=u2Eoz8rIWJw
+
+Python
+https://www.youtube.com/watch?v=SnEtWSZyBkY
+
+
+
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+    MessageBox(0, (LPCWSTR)L"myfirstdll loaded", (LPCWSTR)L"SUCCESS STATUS", MB_OK);
+    return TRUE; // succesful
+}
+
+
+
+
+
+
+
+
+
+
+
