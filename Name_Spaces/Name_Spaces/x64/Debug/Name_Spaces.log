@@ -1,0 +1,3 @@
+﻿  Name_Spaces.cpp
+C:\Users\Blu-Ray\source\C++\Name_Spaces\Name_Spaces\Name_Spaces.cpp(46,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Name_Spaces.vcxproj -> C:\Users\Blu-Ray\source\C++\Name_Spaces\x64\Debug\Name_Spaces.exe

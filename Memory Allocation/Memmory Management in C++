@@ -1,0 +1,88 @@
+(1)Dynamic Sized Array
+char str[] = "xxxx9999";
+cout << str[1];
+
+* = []
+
+
+
+
+
+Allocation Reserve
+Deallocation Frre -Destroy
+
+
+Static Memory Allocation [Allocated Size Known in Compile Time]
+Premative DataTypes (int,bool,float,string,char,double.........)
+PreKnown Fixed Size DataTypes (You can Castoum it) Specefic Static Memmory allocation
+Use Stack
+Managed [Auto Deallocated] 
+
+
+int i;
+float[i];
+Wrong code Becase You will use stack to allocate undefined Size
+
+Examples:
+int x;
+char str[12] = "xxxx9999";
+
+
+
+Pointers  are special Variables stored In Stack conatins Ram addresses Values
+ 
+
+
+
+
+
+
+Dynamic Memmory allocation[Allocated Size Known in Run time Time - Continiously changing]
+non-Premative DataTypes (
+Size Changing in runtime related to Program I/O Processing
+Use Heap
+UnManaged [Manual Deallocated] 
+
+Heap Memmory is inaccessiable from Executable so You need a Pointer To access it (Pointers Stored in stackk so it is the way)
+
+
+
+
+new int[50];
+Need 2 things 
+1- BE Accessed
+
+int n;
+int *p;
+cout << "Enter Array Size:" ;cin >>i; 
+p = new int[n];
+
+//any access sign
+
+return 0;
+
+2- Deleting
+delete []p; //Destroy (Free Ram Space)
+
+
+
+
+
+
+
+
+Examples
+
+int *heapvar = new int;
+*heapvar = 90;
+cout << * heapvar;
+delete heapvar;
+
+
+int *heaparr = new int[8]; //pointer points to first element of array
+heaparr[0] = 90;
+heaparr[1] = 99; 
+cout << heaparr[0];
+delete [] heaparr;
+
+

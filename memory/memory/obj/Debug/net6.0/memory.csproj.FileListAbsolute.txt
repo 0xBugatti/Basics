@@ -1,0 +1,15 @@
+C:\Users\Blu-Ray\source\C++\memory\memory\bin\Debug\net6.0\memory.exe
+C:\Users\Blu-Ray\source\C++\memory\memory\bin\Debug\net6.0\memory.deps.json
+C:\Users\Blu-Ray\source\C++\memory\memory\bin\Debug\net6.0\memory.runtimeconfig.json
+C:\Users\Blu-Ray\source\C++\memory\memory\bin\Debug\net6.0\memory.dll
+C:\Users\Blu-Ray\source\C++\memory\memory\bin\Debug\net6.0\memory.pdb
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.csproj.AssemblyReference.cache
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.AssemblyInfoInputs.cache
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.AssemblyInfo.cs
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.csproj.CoreCompileInputs.cache
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.dll
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\refint\memory.dll
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.pdb
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\memory.genruntimeconfig.cache
+C:\Users\Blu-Ray\source\C++\memory\memory\obj\Debug\net6.0\ref\memory.dll
