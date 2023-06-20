@@ -1,0 +1,8 @@
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\obj\Debug\DotNetReflector.csproj.AssemblyReference.cache
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\obj\Debug\DotNetReflector.csproj.SuggestedBindingRedirects.cache
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\obj\Debug\DotNetReflector.csproj.CoreCompileInputs.cache
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\bin\Debug\DotNetReflector.exe.config
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\bin\Debug\DotNetReflector.exe
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\bin\Debug\DotNetReflector.pdb
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\obj\Debug\DotNetReflector.exe
+C:\Users\Blu-Ray\source\testing\DotNetReflector\DotNetReflector\obj\Debug\DotNetReflector.pdb

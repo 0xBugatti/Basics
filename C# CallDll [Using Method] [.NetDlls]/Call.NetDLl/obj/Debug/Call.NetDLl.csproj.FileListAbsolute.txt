@@ -1,0 +1,11 @@
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\bin\Debug\Call.NetDLl.exe.config
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\bin\Debug\Call.NetDLl.exe
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\bin\Debug\Call.NetDLl.pdb
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\bin\Debug\dotNetDll.dll
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\bin\Debug\dotNetDll.pdb
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\obj\Debug\Call.NetDLl.csproj.AssemblyReference.cache
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\obj\Debug\Call.NetDLl.csproj.SuggestedBindingRedirects.cache
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\obj\Debug\Call.NetDLl.csproj.CoreCompileInputs.cache
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\obj\Debug\Call.NetDLl.csproj.CopyComplete
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\obj\Debug\Call.NetDLl.exe
+C:\Users\Blu-Ray\source\dlls\Call.NetDLl\Call.NetDLl\obj\Debug\Call.NetDLl.pdb

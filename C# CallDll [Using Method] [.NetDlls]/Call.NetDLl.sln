@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Call.NetDLl", "Call.NetDLl\Call.NetDLl.csproj", "{711A3BD4-C6ED-4202-B1AC-1C434E6BDA0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{711A3BD4-C6ED-4202-B1AC-1C434E6BDA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711A3BD4-C6ED-4202-B1AC-1C434E6BDA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711A3BD4-C6ED-4202-B1AC-1C434E6BDA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711A3BD4-C6ED-4202-B1AC-1C434E6BDA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C687B292-3ADA-48A8-B820-FE56F09DDBFB}
+	EndGlobalSection
+EndGlobal
